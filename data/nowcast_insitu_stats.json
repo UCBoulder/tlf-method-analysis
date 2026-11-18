@@ -1,0 +1,144 @@
+{
+ "generated_from": "https://validation.thelume.ai/api/nowcast/decisions",
+ "scope": "LOQ>=10 & uncensored & site rank>=8 (gate SITE_MIN)",
+ "regions": {
+  "boulder": {
+   "unrestricted": {
+    "n": 188,
+    "exc": 44,
+    "IA": 0.735,
+    "R2": 0.317,
+    "RMSE": 0.464,
+    "sens": 0.773,
+    "spec": 0.674,
+    "BA": 0.723
+   },
+   "scoped": {
+    "n": 128,
+    "exc": 29,
+    "IA": 0.775,
+    "R2": 0.412,
+    "RMSE": 0.375,
+    "sens": 0.828,
+    "spec": 0.677,
+    "BA": 0.752
+   },
+   "calibration_scoped": {
+    "n": 128,
+    "IA": 0.75,
+    "RMSE": 0.372
+   },
+   "decision_cost_all_grabs": {
+    "calibration": 92,
+    "stack": 77,
+    "regression": 96
+   },
+   "sweep": {
+    "4": {
+     "n": 149,
+     "IA": 0.761
+    },
+    "6": {
+     "n": 139,
+     "IA": 0.767
+    },
+    "8": {
+     "n": 128,
+     "IA": 0.775
+    },
+    "10": {
+     "n": 116,
+     "IA": 0.782
+    },
+    "12": {
+     "n": 107,
+     "IA": 0.811
+    }
+   },
+   "dates": [
+    "2026-04-27",
+    "2026-08-31"
+   ],
+   "gm30": {
+    "windows": 17,
+    "IA": 0.883,
+    "RMSE": 0.219,
+    "agree_above_limit": 14,
+    "exceed_frac_record": 0.147,
+    "exceed_frac_grabs": 0.229
+   }
+  },
+  "paris": {
+   "unrestricted": {
+    "n": 170,
+    "exc": 19,
+    "IA": 0.613,
+    "R2": -0.082,
+    "RMSE": 0.647,
+    "sens": 0.526,
+    "spec": 0.695,
+    "BA": 0.611
+   },
+   "scoped": {
+    "n": 119,
+    "exc": 18,
+    "IA": 0.729,
+    "R2": 0.25,
+    "RMSE": 0.526,
+    "sens": 0.556,
+    "spec": 0.812,
+    "BA": 0.684
+   },
+   "calibration_scoped": {
+    "n": 119,
+    "IA": 0.626,
+    "RMSE": 0.575
+   },
+   "decision_cost_all_grabs": {
+    "calibration": 84,
+    "stack": 73,
+    "regression": 79
+   },
+   "sweep": {
+    "4": {
+     "n": 143,
+     "IA": 0.69
+    },
+    "6": {
+     "n": 131,
+     "IA": 0.717
+    },
+    "8": {
+     "n": 119,
+     "IA": 0.729
+    },
+    "10": {
+     "n": 107,
+     "IA": 0.701
+    },
+    "12": {
+     "n": 95,
+     "IA": 0.666
+    }
+   },
+   "dates": [
+    "2026-07-16",
+    "2026-09-10"
+   ],
+   "gm30": {
+    "windows": 5,
+    "IA": 0.651,
+    "RMSE": 0.352,
+    "agree_above_limit": 5,
+    "exceed_frac_record": 0.104,
+    "exceed_frac_grabs": 0.083
+   }
+  }
+ },
+ "decomposition_identical_grabs": {
+  "n": 179,
+  "deployed_in_sample_IA": 0.77,
+  "stack_prequential_IA": 0.734
+ },
+ "gm30_note": "30-day windows from the 2026-09-09 snapshot of the hourly series (series since rewritten); pairs from the immutable decision log"
+}
