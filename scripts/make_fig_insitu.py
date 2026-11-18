@@ -51,7 +51,7 @@ for ax, reg, lim, title in [(axes[0], "boulder", 126.0, "A   Boulder Creek, six 
     ax.set_xlabel("Colilert (CFU/100 mL)")
     ax.set_ylabel("nowcast estimate (CFU/100 mL)")
     ax.set_title(title, loc="left", fontsize=11, fontweight="bold")
-    ax.text(0.03, 0.97, f"IA = {ia(sc):.3f} (scope)\nIA = {ia(sc + un):.3f} (all)",
+    ax.text(0.03, 0.97, f"IA = {ia(sc):.3f} (evaluation scope)",
             transform=ax.transAxes, va="top", fontsize=9)
     ax.legend(loc="lower right", fontsize=7.5, frameon=False)
     for s in ("top", "right"): ax.spines[s].set_visible(False)
